@@ -1,0 +1,126 @@
+/* Import a modern stylish font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap');
+
+.navbar {
+  background: linear-gradient(145deg, #000000, #2b003d, #ff0080);
+  padding: 1rem;
+  border: none;
+  z-index: 10;
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Glass morphism inside navbar */
+.container-fluid {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Unique brand name with animation */
+.navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff69b4, #8a2be2, #00f7ff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveGradient 5s ease infinite;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Stylish pill nav links */
+.nav-link {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
+  padding: 0.4rem 1rem;
+  margin: 0 0.4rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+  color: #ffccff;
+}
+
+/* Active link */
+.nav-link.active {
+  background: #ff69b4;
+  color: #000 !important;
+}
+
+/* Search box styling */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+/* Button with animated border effect */
+.btn-outline-success {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  padding: 0.4rem 1rem;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-outline-success::before {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  transition: all 0.4s ease;
+}
+
+.btn-outline-success:hover::before {
+  left: 100%;
+}
+
+.btn-outline-success:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  .form-control {
+    margin-top: 0.5rem;
+  }
+
+  .btn-outline-success {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}

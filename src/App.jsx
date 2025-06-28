@@ -1,12 +1,29 @@
 import React from 'react'
-import Demo_1 from './components/classDemo/Demo_1'
-import FuntionDemo_1 from './components/funtionDemo/FuntionDemo_1.jsx'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import Gallery from './components/Gallery'
+import Contact from './components/Contact'
+import About from './components/About'
+import Login from './components/Login'
+import Signup from './components/Signup'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+
 
 const App = () => {
   return (
     <>
-      <Demo_1/>
-      <FuntionDemo_1/>
+     <BrowserRouter>
+       <Navbar />
+       <Routes>
+         <Route path="/" element={<Home />} />
+         <Route path="/gallery" element={<Gallery />} />
+         <Route path="/contact" element={<Contact />} />
+         <Route path="/about" element={<About />} />
+         <Route path="/login" element={<Login />} />
+         <Route path="/signup" element={<Signup />} />
+       </Routes>
+     </BrowserRouter>
     </>
   )
 }
