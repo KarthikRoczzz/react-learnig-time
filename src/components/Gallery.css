@@ -1,0 +1,29 @@
+.gallery_Container {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.gallery_Container img {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.gallery_Container img:hover {
+  transform: scale(1.05);
+}
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}

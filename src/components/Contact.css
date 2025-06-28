@@ -1,0 +1,93 @@
+.contact-container {
+  height: 100vh;
+  width: 100%;
+   background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contact-box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.contact-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #ff69b4, #87cefa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-box p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #ffffffcc;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+..contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.25); /* slightly more solid */
+  color: #000; /* dark text for readability */
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #333333aa; /* darker placeholder for visibility */
+}
+
+.contact-form button {
+  background-color: #ff69b4;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.contact-form button:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+}
+
+
+.contact-info {
+  font-size: 0.95rem;
+  color: black;
+  margin-top: 1rem;     
+}
+
+.contact-info p {
+  color: #a14ea1;
+  text-decoration: none;
+}

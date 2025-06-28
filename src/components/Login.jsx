@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import './Auth.css';
 
 const Login = () => {
   return (
-    <div>Login</div>
-  )
-}
+    <div className="auth-container">
+      <div className="auth-box">
+        <h2>Login</h2>
+        <form className="auth-form">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+          <p className="switch-text">Don't have an account? <a href="/signup">Signup</a></p>
+        </form>
+      </div>
+    </div>
+  );
+};
 
-export default Login
+export default Login;
