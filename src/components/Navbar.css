@@ -30,6 +30,7 @@
   background: linear-gradient(90deg, #ff69b4, #8a2be2, #00f7ff);
   background-size: 300% 300%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: moveGradient 5s ease infinite;
   text-transform: uppercase;
@@ -43,8 +44,8 @@
   100% { background-position: 0% 50%; }
 }
 
-/* Stylish pill nav links */
-.nav-link {
+/* Stylish pill nav Links */
+.nav-Link {
   color: #fff;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 25px;
@@ -54,14 +55,14 @@
   font-weight: 500;
 }
 
-.nav-link:hover {
+.nav-Link:hover {
   background: rgba(255, 255, 255, 0.15);
   transform: scale(1.05);
   color: #ffccff;
 }
 
-/* Active link */
-.nav-link.active {
+/* Active Link */
+.nav-Link.active {
   background: #ff69b4;
   color: #000 !important;
 }
@@ -88,6 +89,13 @@
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;  
+  font-family: 'Poppins', sans-serif;
+  width: 120px;
+  text-decoration: none;  
+  text-align: center;
 }
 
 .btn-outline-success::before {
@@ -98,15 +106,19 @@
   height: 100%;
   background: linear-gradient(90deg, transparent, #fff, transparent);
   transition: all 0.4s ease;
+  text-align: center;
 }
 
 .btn-outline-success:hover::before {
-  left: 100%;
+  left: 90%;
 }
 
 .btn-outline-success:hover {
   background: #fff;
   color: #000;
+  display: inline-block;
+  transform: translateY(-2px);
+  
 }
 
 /* Responsive styles */
@@ -123,4 +135,13 @@
     width: 100%;
     margin-top: 0.5rem;
   }
+}
+.nav-Link,
+.navbar-brand {
+  text-decoration: none !important;
+}
+
+.nav-Link:hover,
+.navbar-brand:hover {
+  color: #ff69b4 !important; /* Optional hover color */
 }
